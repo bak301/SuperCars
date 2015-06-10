@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 20, 2015, 2:11:18 PM
+    Author     : Natural
+*/
+.news-tips {
+    background-color: black;
+}
+.news>p {
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.news img {
+    width: 100%;
+}
+.tips>p {
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.tips img {
+    width: 100%;
+    padding-bottom: 55px;
+}
+.detail {
+    width: 100%;
+    color: white;
+}

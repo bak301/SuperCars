@@ -1,0 +1,56 @@
+.footer {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav {
+    background-color: black;
+    border-bottom: 1px solid white;
+}
+
+.navbar {
+    font-size: 16px;
+    height: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 20px;
+    line-height: 60px;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.brand {
+    padding-top: 30px;
+    margin: 0 auto;
+    display: table;
+}
+
+.brand a{
+	display: block;
+	width: 190px;
+	height: auto;
+}
+
+.brand img{
+	width: 100%;
+	height: auto;
+}

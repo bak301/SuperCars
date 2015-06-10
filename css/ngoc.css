@@ -1,0 +1,21 @@
+
+.images-acces img{
+	width:100%;
+	height: auto;
+}
+.images-acces{
+	padding: 20px;
+
+}
+.title-acces{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+.accessories a {
+	white-space: nowrap;
+}
+.accessories h1{
+	font-style: italic;
+	font-weight: bold;
+}
