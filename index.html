@@ -7,9 +7,9 @@
     <title>Super Car</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-    <link rel="stylesheet" href="owl-carousel/owl.transitions.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" href="css/ngoc.css">
     <link rel="stylesheet" href="css/tips.css">
@@ -20,17 +20,17 @@
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="nav" id="navigation">
+            <nav class="nav">
                 <div class="container">
                     <div class="brand">
                         <a href="#"><img src="img/logo.jpg"></a>
                     </div>
-                    <ul class="navbar">
+                    <ul class="navbar" id="navigation">
                         <li><a href="#navigation" onclick="go('newCars')">home</a></li>
                         <li><a href="#navigation" onclick="go('news-tips')">news</a></li>
                         <li><a href="#navigation" onclick="go('Features')">Features</a></li>
                         <li><a href="#navigation" onclick="go('accessories')">accessories</a></li>
-                        <li><a href="#">review</a></li>
+                        <li><a href="#navigation" onclick="go('Features')">review</a></li>
                         <li><a href="#navigation" onclick="go('about-contact')">about</a></li>
                         <li><a href="#navigation" onclick="go('about-contact')">contact</a></li>
                     </ul>
@@ -42,17 +42,17 @@
         <section class="body">
             <ul id="mainContent">
                 <li class="section" id="newCars">
-                    <ul id="carousel">
-                        <li class="item">
+                    <ul class="owl-carousel slideShow">
+                        <li>
                             <img src="img/1.jpg" alt="">
                         </li>
-                        <li class="item">
+                        <li>
                             <img src="img/2.jpg" alt="">
                         </li>
-                        <li class="item">
+                        <li>
                             <img src="img/3.jpg" alt="">
                         </li>
-                        <li class="item">
+                        <li>
                             <img src="img/4.jpg" alt="">
                         </li>
                     </ul>
@@ -337,15 +337,19 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
     <script>
-    $(document).ready(function() {	
-        $('#carousel').owlCarousel({
-            singleItem: true,
-            autoPlay: 4000,
-            navigation: true,
-            navigationText: ['<', '>'],
-            pagination: false
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+        	loop: true,
+            animateOut: 'zoomOut',
+            animateIn: 'slideInLeft',
+            items: 1,
+            smartSpeed: 1000,
+            autoHeight: true,
+            dots: false,
+            nav: true,
+        	navText: ['<','>']
         });
         $('.popoverOption').popover({
             trigger: "hover",
@@ -354,9 +358,11 @@
     });
     </script>
     <script>
-    function go(name){
-    	$('#'+name).siblings('.section').hide();
-    	$('#'+name).fadeIn('slow');
+    function go(name) {
+        $('#' + name).addClass('animated bounceInUp').show().siblings('.section').hide();
+        setTimeout(function() {
+            $('.bounceInUp').removeClass('bounceInUp')
+        }, 2000)
     }
     $('.section').hide().siblings('#newCars').show();
     </script>

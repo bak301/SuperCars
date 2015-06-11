@@ -22,7 +22,7 @@ img{
 **************************/
 /* ----------- Navigation ---------------*/
 /* ----------- Carousel ---------------*/
-.owl-theme .owl-controls .owl-buttons div {
+.owl-theme .owl-controls .owl-nav div {
     background: none;
     padding: 13px 19px 9px 19px;
     font-size: 1.4em;
@@ -30,20 +30,20 @@ img{
     border: 1px solid white;
 }
 
-.owl-theme .owl-buttons i {
+.owl-theme .owl-nav i {
     margin-top: 2px;
 }
 
-.owl-theme .owl-controls .owl-buttons div {
+.owl-theme .owl-controls .owl-nav div {
     position: absolute;
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-prev {
+.owl-theme .owl-controls .owl-nav .owl-prev {
     left: 15px;
     top: 45%;
 }
 
-.owl-theme .owl-controls .owl-buttons .owl-next {
+.owl-theme .owl-controls .owl-nav .owl-next {
     right: 15px;
     top: 45%;
 }
@@ -71,7 +71,7 @@ img{
 
 .checkBox {
     margin-top: 5%;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .checkBox div {
