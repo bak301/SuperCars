@@ -10,6 +10,10 @@
 body{
     font-family: "Classico Italic", sans-serif;
 }
+img{
+    width: 100%;
+    height: auto;
+}
 
 /* ************************
 
@@ -18,30 +22,6 @@ body{
 **************************/
 /* ----------- Navigation ---------------*/
 /* ----------- Carousel ---------------*/
-
-.item {
-    max-height: 450px;
-}
-
-.item img {
-    width: 100%;
-    height: auto;
-}
-
-.item div {
-    background: rgba(51, 51, 51, 0.3);
-    width: 500px;
-    height: 200px;
-    position: absolute;
-    bottom: 220px;
-    left: 100px;
-    padding: 0 50px;
-}
-
-.item h1 {
-    color: white;
-}
-
 .owl-theme .owl-controls .owl-buttons div {
     background: none;
     padding: 13px 19px 9px 19px;
@@ -104,11 +84,6 @@ body{
     position: relative;
 }
 
-.cars-item img {
-    width: 100%;
-    height: auto;
-}
-
 .cars-info {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -169,13 +144,9 @@ body{
 }
 
 @media (min-width: 972px) {
-    .item img {
-        position: relative;
-        bottom: 100px;
-    }
     .cars-info {
         bottom: -140px;
-        width: 350px;
+        width: 360px;
         height: 175px;
     }
 }
