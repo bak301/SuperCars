@@ -33,8 +33,6 @@
 }
 
 .navbar a:hover {
-    padding: 20px;
-    font-size: 24px;
     font-weight: bolder;
 }
 
@@ -44,13 +42,16 @@
     display: table;
 }
 
-.brand a{
-	display: block;
-	width: 190px;
-	height: auto;
+.brand a {
+    display: block;
+    width: 190px;
+    height: auto;
 }
 
-.brand img{
-	width: 100%;
-	height: auto;
+@media (min-width: 992px) {
+    .navbar a:hover {
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bolder;
+    }
 }

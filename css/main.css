@@ -1,20 +1,25 @@
 /**** MAIN CONFIG ****/
+
 @font-face {
-  font-family: "Classico Italic";
-  font-style: italic;
-  font-weight: normal;
-  src: url('../fonts/Classico Italic.ttf') format('truetype');
-  src: url('../fonts/URWClassicoT-ReguItal.otf') format('opentype');
+    font-family: "Classico Italic";
+    font-style: italic;
+    font-weight: normal;
+    src: url('../fonts/Classico Italic.ttf') format('truetype');
+    src: url('../fonts/URWClassicoT-ReguItal.otf') format('opentype');
 }
 
-body{
+body {
     font-family: "Classico Italic", sans-serif;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
 }
 
+a:hover{
+    text-decoration: none;
+}
 /* ************************
 
     ***   HEADER ****
@@ -22,9 +27,9 @@ img{
 **************************/
 /* ----------- Navigation ---------------*/
 /* ----------- Carousel ---------------*/
+
 .owl-theme .owl-controls .owl-nav div {
     background: none;
-    padding: 13px 19px 9px 19px;
     font-size: 1.4em;
     font-weight: bolder;
     border: 1px solid white;
@@ -65,17 +70,13 @@ img{
     margin: 0 23%;
     font-size: 2.3em;
     font-style: italic;
-    font-family: 'Classico Italic',sans-serif;
+    font-family: 'Classico Italic', sans-serif;
     text-align: center;
 }
 
 .checkBox {
     margin-top: 5%;
     margin-bottom: 15%;
-}
-
-.checkBox div {
-    font-size: 1.6em;
 }
 
 .cars-item {
@@ -108,6 +109,65 @@ img{
     text-align: left;
     padding-left: 15px;
 }
+
+#car-container{
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+#car-container h1{
+    text-transform: uppercase;
+}
+
+#car-container h2{
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+.carLogo{
+    margin: 50px 0;
+}
+.carKeyFeatures{
+    padding: 50px 0;
+}
+.KeyFeatures{
+    font-size: 1.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.keyDetail{
+    text-align: left;
+    font-size: 1.3em;
+}
+#car-container .techSpec h2{
+    font-size: 3em;
+    text-transform: uppercase;
+    padding: 30px 0;
+}
+
+.techSpec h3{
+    padding: 30px 0;
+    border-bottom: 1px solid white;
+    border-collapse: collapse;
+}
+.techSpec header{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.featureList{
+    list-style: circle;
+    text-align: left;
+    font-size: 1.2em;
+}
+.item div{
+    padding-top: 30px;
+}
+.item .name{
+    font-size: 1.5em;
+}
+
+
 /* ************************
 
     ***   FOOTER ****
@@ -115,7 +175,10 @@ img{
 **************************/
 /** MEDIA QUERY **/
 
-@media (min-width: 320px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 767px) {
+    .checkBox div{
+        font-size: 1.3em;
+    }
     .cars-info {
         bottom: -100px;
         width: 260px;
@@ -130,20 +193,55 @@ img{
     .tips img {
         padding: 40px;
     }
-    .tips{
+    .tips {
         border-left: none;
     }
 }
 
+@media (max-width: 971px){
+    #offcanvas{
+        position: fixed;
+        z-index: 2;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        height: 50px;
+        transition: left 0.5s ease-in-out;
+        font-size: 3em;
+        text-align: center;
+    }
+    #offcanvas:hover{
+        cursor: pointer;
+    }
+    #navigation{
+        position: fixed;
+        z-index: 2;
+        padding: 0;
+        left:-133px;
+        top:0px;
+        transition: left 0.5s ease-in-out;
+    }
+    #navigation li{
+        background: black;
+        display: block;
+    }
+}
+
 @media (min-width: 768px) {
+    .checkBox div{
+        font-size: 1.4em;
+    }
     .cars-info {
         bottom: -140px;
-        width: 330px;
+        width: 345px;
         height: 166px;
     }
 }
 
 @media (min-width: 972px) {
+    .checkBox div {
+        font-size: 1.6em;
+    }
     .cars-info {
         bottom: -140px;
         width: 360px;

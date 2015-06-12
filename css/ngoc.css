@@ -1,6 +1,5 @@
 .images-acces{
 	padding: 20px;
-
 }
 .title-acces{
 	text-align: center;
@@ -11,6 +10,26 @@
 	white-space: nowrap;
 }
 #accessories h1{
+	background: white;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 3.5em;
 	font-style: italic;
 	font-weight: bold;
+}
+
+hr{
+	border-top: 1px solid black;
+	position: relative;
+	z-index: -1;
+	bottom: 85px;
+}
+@media (max-width: 768px){
+	.images-acces{
+		padding: 0;
+	}
+	.title-acces{
+		padding-top:20px;
+		padding-bottom: 10px;
+	}
 }

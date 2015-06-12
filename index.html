@@ -22,17 +22,19 @@
         <header class="header">
             <nav class="nav">
                 <div class="container">
-                    <div class="brand">
-                        <a href="#"><img src="img/logo.jpg"></a>
+                    <div id="logo" class="brand">
+                        <a href="index.html"><img src="img/logo.jpg"></a>
                     </div>
+                    <a id="offcanvas" class="hidden-lg">&#9776</a>
                     <ul class="navbar" id="navigation">
                         <li><a href="#navigation" onclick="go('newCars')">home</a></li>
                         <li><a href="#navigation" onclick="go('news-tips')">news</a></li>
-                        <li><a href="#navigation" onclick="go('Features')">Features</a></li>
+                        <li><a href="#navigation" onclick="go('CarFilter'),carFilter('features')">Cars</a></li>
+                        <li><a href="#navigation" onclick="go('collection')">collection</a></li>
                         <li><a href="#navigation" onclick="go('accessories')">accessories</a></li>
-                        <li><a href="#navigation" onclick="go('Features')">review</a></li>
                         <li><a href="#navigation" onclick="go('about-contact')">about</a></li>
                         <li><a href="#navigation" onclick="go('about-contact')">contact</a></li>
+
                     </ul>
                 </div>
             </nav>
@@ -42,9 +44,9 @@
         <section class="body">
             <ul id="mainContent">
                 <li class="section" id="newCars">
-                    <ul class="owl-carousel slideShow">
+                    <ul class="owl-carousel">
                         <li>
-                            <img src="img/1.jpg" alt="">
+                            <a href="#navigation" onclick="go('car-container')"><img src="img/1.jpg" alt=""></a>
                         </li>
                         <li>
                             <img src="img/2.jpg" alt="">
@@ -58,27 +60,27 @@
                     </ul>
                     <!-- Carousel -->
                 </li>
-                <li class="section" id="Features">
+                <li class="section" id="CarFilter">
                     <section class="cars">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
                                     <div class="cars-title">
-                                        <h1>DISCOVER ASTON MARTIN</h1>
+                                        <h1>DISCOVER CAR'S WORLD</h1>
                                     </div>
                                     <form action="" class="checkBox">
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <input type="radio" value='Features' name='chckbx' checked> Features</div>
+                                            <input onclick="carFilter('features')" type="radio" value='Features' name='chckbx' checked> Features</div>
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <input type="radio" value='New' name='chckbx'> New</div>
+                                            <input onclick="carFilter('new')" type="radio" value='New' name='chckbx'> New</div>
                                         <div class="col-sm-3 col-sm-offset-1">
-                                            <input type="radio" value='High Rated' name='chckbx'> Rating</div>
+                                            <input onclick="carFilter('rate')" type="radio" value='High Rated' name='chckbx'> Rated</div>
                                     </form>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="col-sm-12">
                                     <div class="row">
                                         <ul class="item-wrapper">
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 features">
                                                 <div class="cars-item">
                                                     <img src="img/item-1.jpg" alt="">
                                                     <div class="cars-info">
@@ -93,7 +95,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 features rate">
                                                 <div class="cars-item">
                                                     <img src="img/item-2.jpg" alt="">
                                                     <div class="cars-info">
@@ -108,7 +110,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 features new">
                                                 <div class="cars-item">
                                                     <img src="img/item-3.jpg" alt="">
                                                     <div class="cars-info">
@@ -123,7 +125,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 rate new">
                                                 <div class="cars-item">
                                                     <img src="img/item-4.jpg" alt="">
                                                     <div class="cars-info">
@@ -138,7 +140,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 rate">
                                                 <div class="cars-item">
                                                     <img src="img/item-5.jpg" alt="">
                                                     <div class="cars-info">
@@ -153,7 +155,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4">
+                                            <li class="col-sm-6 col-md-4 new">
                                                 <div class="cars-item">
                                                     <img src="img/item-6.jpg" alt="">
                                                     <div class="cars-info">
@@ -220,7 +222,8 @@
                 <li class="section" id="accessories">
                     <section class="accessories">
                         <div class="container">
-                            <h1 class="title-acces">ACCESSORIES</h1>
+                            <h1 class="title-acces col-sm-4 col-sm-offset-4">ACCESSORIES</h1>
+                            <hr class="col-sm-8 col-sm-offset-2">
                             <div class="row">
                                 <div class="col-xs-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Lốp dạ quang có thể soi sáng đường trong đêm... sản phẩm bền lâu chịu mài mòn cao và chịu áp suất cực tốt... thích hợp với những bạn trẩu trẩu muốn thể hiện mình... " rel="popover" data-original-title="Lốp Con Đóm">
@@ -291,11 +294,11 @@
                                         <div class="col-sm-12">
                                             <h1><strong> CONTACT </strong></h1>
                                             <div class="col-sm-6">
-                                                <p><strong> - CWH Company, 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi.</strong> </p>
-                                                <p><strong> - Tel: 04(3).934.8888.</strong> </p>
-                                                <p><strong> - Mobile: 0969696969.</strong> </p>
-                                                <p><strong> - Mail: cwhcompany@gmail.com</strong> </p>
-                                                <p><strong> - Website: cwhgroup.com.vn</strong> </p>
+                                                <p><strong> - CWH Company</strong>, 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi. </p>
+                                                <p><strong> - Tel:</strong> 04(3).934.8888. </p>
+                                                <p><strong> - Mobile:</strong> 0969696969. </p>
+                                                <p><strong> - Mail:</strong> cwhcompany@gmail.com </p>
+                                                <p><strong> - Website:</strong> cwhgroup.com.vn </p>
                                             </div>
                                             <div class="col-sm-5 col-sm-offset-7">
                                                 <a href="http://www.facebook.com/caiwinhoi"> Follow us <img src="images/contact.png"/> </a>
@@ -307,7 +310,96 @@
                             </div>
                         </div>
                     </div>
-                    <!-- About & Contact -->
+                </li>
+                <!-- About & Contact -->
+                <li class="section" id="car-container">
+                    <div class="container">
+                        <div class="row">
+                            <header class="col-sm-4">
+                                <div class="col-sm-8 col-sm-offset-2"><img class="carLogo" src="img/cars/logo/aston-martin.jpg" alt=""></div>
+                                <h1 class="carName">aston martin vulcan</h1>
+                                <h2 class="carDesc">lightspeed. arrow design. classical aston martin</h2>
+                            </header>
+                            <!-- /header -->
+                            <div class="col-sm-8">
+                                <img src="img/cars/vulcan.jpg">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <article class="col-sm-12">
+                                <div class="row carKeyFeatures">
+                                    <span class="col-sm-6">
+                                        <img src="http://image.motortrend.com/f/roadtests/coupes/1502_aston_martin_vulcan_first_look/94664216/aston-martin-vulcan-front-end.jpg" alt="">
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <h3 class="KeyFeatures">Lightspeed at 500km/h</h3>
+                                        <p class="keyDetail"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </span>
+                                </div>
+                                <div class="row carKeyFeatures">
+                                    <span class="col-sm-6">
+                                        <h3 class="KeyFeatures">ready for v12 engine</h3>
+                                        <p class="keyDetail"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <img src="http://astonmartin.blob.core.windows.net/sitefinity/video-thumbnails/Aston-Martin-Vulcan_gallerythumb.jpg" alt="">
+                                    </span>
+                                </div>
+                                <div class="row carKeyFeatures">
+                                    <span class="col-sm-6">
+                                        <img src="http://images.car.bauercdn.com/pagefiles/10153/aston-martin-vulcan_11.jpg" alt="">
+                                    </span>
+                                    <span class="col-sm-6">
+                                        <h3 class="KeyFeatures">simple. keyless. noise suppression</h3>
+                                        <p class="keyDetail"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                    </span>
+                                </div>
+                            </article>
+                            <arcticle class="col-sm-12">
+                                <div class="row techSpec">
+                                    <h2 class="col-sm-12">Technical specification</h2>
+                                    <div class="col-sm-12">
+                                        <header>
+                                            <h3 class="col-sm-3">Name</h3>
+                                            <h3 class="col-sm-9">Features</h3>
+                                        </header>
+                                        <div class="item">
+                                            <div class="col-sm-3 name">BODY</div>
+                                            <div class="col-sm-9">
+                                                <ul class="featureList">
+                                                    <li>Two-seat, two-door coupe body style</li>
+                                                    <li>Extruded bonded aluminium</li>
+                                                    <li>VH body structure aluminium, magnesium alloy, composite and steel body</li>
+                                                    <li>Extruded aluminium door side-impact beams</li>
+                                                    <li>Halogen projector headlamps (main beam)</li>
+                                                    <li>High Intensity Discharge headlamps (dipped beam)</li>
+                                                    <li>Black headlamp bezels</li>
+                                                    <li>LED rear lamps</li>
+                                                    <li>Clear rear lamps with a black border</li>
+                                                    <li>Carbon fibre front splitter and rear diffuser</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-sm-3 name">ENGINE</div>
+                                            <div class="col-sm-9">
+                                                <ul class="featureList">
+                                                    <li>AM28 all-alloy, quad overhead camshaft, 48 valve, 5,935cc, V12</li>
+                                                    <li>Front mid-mounted engine, rear-wheel drive</li>
+                                                    <li>Fully catalysed stainless steel exhaust system with active bypass valves</li>
+                                                    <li>Max power: 573 PS (565 bhp) at 6,750 rpm</li>
+                                                    <li>Max torque: 620 Nm (457 lb ft) at 5,750 rpm</li>
+                                                    <li>Acceleration: 0-60mph: 3.7 secs</li>
+                                                    <li>Acceleration: 0-100 km/h: 3.9 secs</li>
+                                                    <li>Max speed (estimated): 328 km/h (205 mph)</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </arcticle>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <!-- Main CONTENT -->
@@ -338,34 +430,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="owl-carousel/owl.carousel.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-        	loop: true,
-            animateOut: 'zoomOut',
-            animateIn: 'slideInLeft',
-            items: 1,
-            smartSpeed: 1000,
-            autoHeight: true,
-            dots: false,
-            nav: true,
-        	navText: ['<','>']
-        });
-        $('.popoverOption').popover({
-            trigger: "hover",
-            placement: "bottom"
-        });
-    });
-    </script>
-    <script>
-    function go(name) {
-        $('#' + name).addClass('animated bounceInUp').show().siblings('.section').hide();
-        setTimeout(function() {
-            $('.bounceInUp').removeClass('bounceInUp')
-        }, 2000)
-    }
-    $('.section').hide().siblings('#newCars').show();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

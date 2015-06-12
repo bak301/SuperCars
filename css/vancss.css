@@ -26,7 +26,6 @@
 }
 .about-us h1{
     color: white;
-    font-family: monospace;
     font-size: 40px;
     padding: 5px;
     padding-left: 60px;
@@ -34,20 +33,18 @@
 .about-us p{
     color: white;
     padding-top: 0px;
-    font-family: cursive;
+    font-size: 1.2em;
 }
 .contact h1{
     color: white;
-    font-family: monospace;
     font-size: 40px;
     padding: 5px;
     padding-left: 60px;
-    
 }
 .contact p{
     color: white;
     padding-top: 0px;
-    font-family: cursive;
+    font-size: 1.2em;
 }
 .contact a{
     color: white;
