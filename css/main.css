@@ -103,6 +103,7 @@ a:hover{
     margin-bottom: 5px;
     font-style: italic;
     font-size: 1.2em;
+    color: #fff;
 }
 
 .cars-info li {
@@ -209,9 +210,13 @@ a:hover{
         transition: left 0.5s ease-in-out;
         font-size: 3em;
         text-align: center;
+        color: white;
     }
     #offcanvas:hover{
         cursor: pointer;
+    }
+    #offcanvas:active{
+        color: lightblue;
     }
     #navigation{
         position: fixed;
@@ -235,6 +240,9 @@ a:hover{
         bottom: -140px;
         width: 345px;
         height: 166px;
+    }
+    .border-sm{
+        border-left: 1px solid white;
     }
 }
 

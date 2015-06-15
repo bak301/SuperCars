@@ -18,17 +18,6 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
@@ -36,7 +25,7 @@
                     <div id="logo" class="brand">
                         <a href="index.html"><img src="img/logo.jpg"></a>
                     </div>
-                    <a id="offcanvas" class="hidden-lg">&#9776</a>
+                    <a id="offcanvas" class="hidden-md hidden-lg">&#9776</a>
                     <ul class="navbar" id="navigation">
                         <li><a href="#navigation" onclick="go('newCars')">home</a></li>
                         <li><a href="#navigation" onclick="go('news-tips')">news</a></li>
@@ -92,7 +81,7 @@
                                         <ul class="item-wrapper">
                                             <li class="col-sm-6 col-md-4 features">
                                                 <div class="cars-item">
-                                                    <img src="img/item-1.jpg" alt="">
+                                                    <a href="#navigation" onclick="go('car-container')"><img src="img/item-1.jpg" alt=""></a>
                                                     <div class="cars-info">
                                                         <h3>aston martin v12</h3>
                                                         <ul>
@@ -135,6 +124,66 @@
                                                     </div>
                                                 </div>
                                             </li>
+                                            <li class="col-sm-6 col-md-4 features">
+                                                <div class="cars-item">
+                                                    <img src="img/item-11.jpg" alt="">
+                                                    <div class="cars-info">
+                                                        <h3>White Angel</h3>
+                                                        <ul>
+                                                            <li>Engine : V12</li>
+                                                            <li>Horse power: 800</li>
+                                                            <li>Auto-break</li>
+                                                            <li>Self-driving</li>
+                                                            <li>Ultra Nitro Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-6 col-md-4 new rate">
+                                                <div class="cars-item">
+                                                    <img src="img/item-9.jpg" alt="">
+                                                    <div class="cars-info">
+                                                        <h3>SE Classical</h3>
+                                                        <ul>
+                                                            <li>Engine : V12</li>
+                                                            <li>Horse power: 800</li>
+                                                            <li>Auto-break</li>
+                                                            <li>Self-driving</li>
+                                                            <li>Ultra Nitro Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-6 col-md-4 features rate">
+                                                <div class="cars-item">
+                                                    <img src="img/item-10.jpg" alt="">
+                                                    <div class="cars-info">
+                                                        <h3>Forza Special</h3>
+                                                        <ul>
+                                                            <li>Engine : V12</li>
+                                                            <li>Horse power: 800</li>
+                                                            <li>Auto-break</li>
+                                                            <li>Self-driving</li>
+                                                            <li>Ultra Nitro Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-6 col-md-4 new">
+                                                <div class="cars-item">
+                                                    <img src="img/item-7.jpg" alt="">
+                                                    <div class="cars-info">
+                                                        <h3>Magaretta</h3>
+                                                        <ul>
+                                                            <li>Engine : V12</li>
+                                                            <li>Horse power: 800</li>
+                                                            <li>Auto-break</li>
+                                                            <li>Self-driving</li>
+                                                            <li>Ultra Nitro Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
                                             <li class="col-sm-6 col-md-4 rate new">
                                                 <div class="cars-item">
                                                     <img src="img/item-4.jpg" alt="">
@@ -150,11 +199,26 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 rate">
+                                            <li class="col-sm-6 col-md-4 rate features">
                                                 <div class="cars-item">
                                                     <img src="img/item-5.jpg" alt="">
                                                     <div class="cars-info">
                                                         <h3>Garondel</h3>
+                                                        <ul>
+                                                            <li>Engine : V12</li>
+                                                            <li>Horse power: 800</li>
+                                                            <li>Auto-break</li>
+                                                            <li>Self-driving</li>
+                                                            <li>Ultra Nitro Boost</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-sm-6 col-md-4 new rate">
+                                                <div class="cars-item">
+                                                    <img src="img/item-8.jpg" alt="">
+                                                    <div class="cars-info">
+                                                        <h3>Burning Hellfire</h3>
                                                         <ul>
                                                             <li>Engine : V12</li>
                                                             <li>Horse power: 800</li>
@@ -329,12 +393,12 @@
                                     <h2 class="col-sm-12">Technical specification</h2>
                                     <div class="col-sm-12">
                                         <header>
-                                            <h3 class="col-sm-3">Name</h3>
-                                            <h3 class="col-sm-9">Features</h3>
+                                            <h3 class="col-xs-3">Name</h3>
+                                            <h3 class="col-xs-9">Features</h3>
                                         </header>
                                         <div class="item">
-                                            <div class="col-sm-3 name">BODY</div>
-                                            <div class="col-sm-9">
+                                            <div class="col-xs-3 name">BODY</div>
+                                            <div class="col-xs-9">
                                                 <ul class="featureList">
                                                     <li>Two-seat, two-door coupe body style</li>
                                                     <li>Extruded bonded aluminium</li>
@@ -350,8 +414,8 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="col-sm-3 name">ENGINE</div>
-                                            <div class="col-sm-9">
+                                            <div class="col-xs-3 name">ENGINE</div>
+                                            <div class="col-xs-9">
                                                 <ul class="featureList">
                                                     <li>AM28 all-alloy, quad overhead camshaft, 48 valve, 5,935cc, V12</li>
                                                     <li>Front mid-mounted engine, rear-wheel drive</li>
@@ -388,7 +452,7 @@
                                     </div>
                                     <!-- About Us -->
                                 </div>
-                                <div class="col-sm-6" style="border-left: 1px solid white;">
+                                <div class="col-sm-6 border-sm">
                                     <div class="contact">
                                         <div class="col-sm-12">
                                             <h1><strong> CONTACT </strong></h1>
@@ -412,7 +476,6 @@
                 </li>
                 <!-- About Contact -->
             </ul>
-            <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="5"></div>
             <!-- Main CONTENT -->
             <!-- Cars -->
         </main>

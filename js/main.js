@@ -15,19 +15,50 @@ $(document).ready(function() {
         placement: "bottom"
     });
     $('#offcanvas').click(function() {
-        if (!$(this).hasClass('out')) {
-            $('#navigation').css('left', '0px');
-            $(this).css('left', '133px').addClass('out');
-        } else {
-            $('#navigation').css('left', '-133px');
-            $(this).css('left', '10px').removeClass('out');
-        }
+        // if (!$(this).hasClass('out')) {
+        //     $('#navigation').css('left', '0px');
+        //     $(this).css('left', '133px').addClass('out');
+        // } else {
+        //     $('#navigation').css('left', '-133px');
+        //     $(this).css('left', '10px').removeClass('out');
+        // }
+        setTimeout(function(){
+            $('#offcanvas').addClass('out')
+        },1)
+        $('#navigation').css('left', '0px')
     });
-    $('.section').hide().siblings('#newCars').show();
-    $.getScript('js/isotope.js', function() {
-        carFilter('features');
+    $('body > *:not(#navigation)').click(function(){
+        if ($('#offcanvas').hasClass('out')){
+            $('#offcanvas').removeClass('out')
+            $('#navigation').css('left', '-133px');
+        }       
     })
-
+    if (screen.width < 768) {
+        $('#about-contact').addClass('section')
+        $('a[href=#about-contact]').click(function() {
+            go("about-contact")
+        })
+    }
+    setTimeout(function() {
+        $('.section').hide().siblings('#newCars').show();
+        $.getScript('js/isotope.js', function() {
+            carFilter('features');
+        })
+    },1)
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 });
 
 function go(name) {

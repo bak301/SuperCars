@@ -32,4 +32,12 @@ hr{
 		padding-top:20px;
 		padding-bottom: 10px;
 	}
+	#accessories h1{
+		font-size: 2em;
+	}
+}
+@media (max-width: 991px){
+	hr{
+		bottom: 55px
+	}
 }

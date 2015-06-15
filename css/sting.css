@@ -32,10 +32,6 @@
     transition: 0.3s;
 }
 
-.navbar a:hover {
-    font-weight: bolder;
-}
-
 .brand {
     padding-top: 30px;
     margin: 0 auto;
@@ -51,7 +47,6 @@
 @media (min-width: 992px) {
     .navbar a:hover {
         padding: 20px;
-        font-size: 24px;
-        font-weight: bolder;
+        font-size: 30px;
     }
 }
