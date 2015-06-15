@@ -18,6 +18,17 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
@@ -32,8 +43,8 @@
                         <li><a href="#navigation" onclick="go('CarFilter'),carFilter('features')">Cars</a></li>
                         <li><a href="#navigation" onclick="go('collection')">gallery</a></li>
                         <li><a href="#navigation" onclick="go('accessories')">accessories</a></li>
-                        <li><a href="#navigation" onclick="go('about-contact')">about</a></li>
-                        <li><a href="#navigation" onclick="go('about-contact')">contact</a></li>
+                        <li><a href="#about-contact">about</a></li>
+                        <li><a href="#about-contact">contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -270,47 +281,6 @@
                         </div>
                     </section>
                 </li>
-                <li class="section" id="about-contact">
-                    <div class="abt-contact">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="about-us">
-                                        <h1><strong> ABOUT US</strong></h1>
-                                        <div class="col-sm-6">
-                                            <p><strong> - "CWH"</strong> Company is a groups specializes in providing luxury cars in Viet Nam.</p>
-                                            <p> - Come with us, you can find the cars you like, with the best quality service. </p>
-                                            <p><strong> - "CWH"</strong> was founder by 5 members of group "CWH" - grade GC1007 - FPT University. </p>
-                                        </div>
-                                        <div class="col-sm-5 col-sm-offset-7">
-                                            <a href="http://www.caiwinhoi.com"><img src="images/about_us.png" /></a>
-                                        </div>
-                                    </div>
-                                    <!-- About Us -->
-                                </div>
-                                <div class="col-sm-6" style="border-left: 1px solid white;">
-                                    <div class="contact">
-                                        <div class="col-sm-12">
-                                            <h1><strong> CONTACT </strong></h1>
-                                            <div class="col-sm-6">
-                                                <p><strong> - CWH Company</strong>, 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi. </p>
-                                                <p><strong> - Tel:</strong> 04(3).934.8888. </p>
-                                                <p><strong> - Mobile:</strong> 0969696969. </p>
-                                                <p><strong> - Mail:</strong> cwhcompany@gmail.com </p>
-                                                <p><strong> - Website:</strong> cwhgroup.com.vn </p>
-                                            </div>
-                                            <div class="col-sm-5 col-sm-offset-7">
-                                                <a href="http://www.facebook.com/caiwinhoi"> Follow us <img src="images/contact.png"/> </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Contact -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <!-- About & Contact -->
                 <li class="section" id="car-container">
                     <div class="container">
                         <div class="row">
@@ -400,7 +370,49 @@
                         </div>
                     </div>
                 </li>
+                <li id="about-contact">
+                    <div class="abt-contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="about-us">
+                                        <h1><strong> ABOUT US</strong></h1>
+                                        <div class="col-sm-6">
+                                            <p><strong> - "CWH"</strong> Company is a groups specializes in providing luxury cars in Viet Nam.</p>
+                                            <p> - Come with us, you can find the cars you like, with the best quality service. </p>
+                                            <p><strong> - "CWH"</strong> was founder by 5 members of group "CWH" - grade GC1007 - FPT University. </p>
+                                        </div>
+                                        <div class="col-sm-5 col-sm-offset-7">
+                                            <a href="http://www.caiwinhoi.com"><img src="images/about_us.png" /></a>
+                                        </div>
+                                    </div>
+                                    <!-- About Us -->
+                                </div>
+                                <div class="col-sm-6" style="border-left: 1px solid white;">
+                                    <div class="contact">
+                                        <div class="col-sm-12">
+                                            <h1><strong> CONTACT </strong></h1>
+                                            <div class="col-sm-6">
+                                                <p><strong> - CWH Company</strong>, 8 Ton That Thuyet, My Dinh, Tu Liem, Ha Noi. </p>
+                                                <p><strong> - Tel:</strong> 04(3).934.8888. </p>
+                                                <p><strong> - Mobile:</strong> 0969696969. </p>
+                                                <p><strong> - Mail:</strong> cwhcompany@gmail.com </p>
+                                                <p><strong> - Website:</strong> cwhgroup.com.vn </p>
+                                            </div>
+                                            <div class="col-sm-5 col-sm-offset-7">
+                                                <a href="http://www.facebook.com/caiwinhoi"> Follow us <img src="images/contact.png"/> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Contact -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- About Contact -->
             </ul>
+            <div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-numposts="5"></div>
             <!-- Main CONTENT -->
             <!-- Cars -->
         </main>
