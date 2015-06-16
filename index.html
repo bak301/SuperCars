@@ -45,16 +45,56 @@
                 <li class="section" id="newCars">
                     <ul class="owl-carousel">
                         <li>
-                            <a href="#navigation" onclick="go('car-container')"><img src="img/1.jpg" alt=""></a>
+                            <a href="#navigation" onclick="go('car-container')">
+                                <img src="img/1.jpg" alt="">
+                                <article class="car-intro hidden-xs">
+                                    <h2>aston martin vulcan</h2>
+                                    <p class="hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eos veritatis earum :
+                                        <br> > First feature
+                                        <br> > Second feature
+                                        <br> > Third feature
+                                    </p>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <img src="img/2.jpg" alt="">
+                            <a href="#navigation">
+                                <img src="img/2.jpg" alt="">
+                                <article class="car-intro hidden-xs">
+                                    <h2>aston martin DBX</h2>
+                                    <p class="hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eos veritatis earum :
+                                        <br> > First feature
+                                        <br> > Second feature
+                                        <br> > Third feature
+                                    </p>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <img src="img/3.jpg" alt="">
+                            <a href="#navigation">
+                                <img src="img/3.jpg" alt="">
+                                <article class="car-intro hidden-xs">
+                                    <h2>lagoonda</h2>
+                                    <p class="hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eos veritatis earum :
+                                        <br> > First feature
+                                        <br> > Second feature
+                                        <br> > Third feature
+                                    </p>
+                                </article>
+                            </a>
                         </li>
                         <li>
-                            <img src="img/4.jpg" alt="">
+                            <a href="#navigation">
+                                <img src="img/4.jpg" alt="">
+                                <article class="car-intro hidden-xs">
+                                    <h2>vantage 12</h2>
+                                    <p class="hidden-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eos veritatis earum :
+                                        <br> > First feature
+                                        <br> > Second feature
+                                        <br> > Third feature
+                                    </p>
+                                </article>
+                            </a>
                         </li>
                     </ul>
                     <!-- Carousel -->
@@ -68,18 +108,20 @@
                                         <h1>DISCOVER CAR'S WORLD</h1>
                                     </div>
                                     <form action="" class="checkBox">
-                                        <div class="col-sm-3 col-sm-offset-1">
+                                        <div class="col-sm-6">
                                             <input onclick="carFilter('features')" type="radio" value='Features' name='chckbx' checked> Features</div>
-                                        <div class="col-sm-3 col-sm-offset-1">
+                                        <div class="col-sm-6">
                                             <input onclick="carFilter('new')" type="radio" value='New' name='chckbx'> New</div>
-                                        <div class="col-sm-3 col-sm-offset-1">
+                                        <div class="col-sm-6">
                                             <input onclick="carFilter('rate')" type="radio" value='High Rated' name='chckbx'> Rated</div>
+                                        <div class="col-sm-6">
+                                            <input onclick="carFilter('bestVN')" type="radio" value='VN' name='chckbx'> Best in Vietnam</div>
                                     </form>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="row">
                                         <ul class="item-wrapper">
-                                            <li class="col-sm-6 col-md-4 features">
+                                            <li class="col-sm-6 col-md-4 features bestVN">
                                                 <div class="cars-item">
                                                     <a href="#navigation" onclick="go('car-container')"><img src="img/item-1.jpg" alt=""></a>
                                                     <div class="cars-info">
@@ -109,7 +151,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 features new">
+                                            <li class="col-sm-6 col-md-4 features new bestVN">
                                                 <div class="cars-item">
                                                     <img src="img/item-3.jpg" alt="">
                                                     <div class="cars-info">
@@ -117,14 +159,14 @@
                                                         <ul>
                                                             <li>Engine : V8</li>
                                                             <li>Horse power: 600</li>
-                                                            <li>Low DB engine</li>
+                                                            <li>Quiet engine</li>
                                                             <li>Premium GPS</li>
                                                             <li>High Acceleration</li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 features">
+                                            <li class="col-sm-6 col-md-4 features bestVN">
                                                 <div class="cars-item">
                                                     <img src="img/item-11.jpg" alt="">
                                                     <div class="cars-info">
@@ -169,7 +211,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 new">
+                                            <li class="col-sm-6 col-md-4 new bestVN">
                                                 <div class="cars-item">
                                                     <img src="img/item-7.jpg" alt="">
                                                     <div class="cars-info">
@@ -184,11 +226,11 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 rate new">
+                                            <li class="col-sm-6 col-md-4 rate new bestVN">
                                                 <div class="cars-item">
                                                     <img src="img/item-4.jpg" alt="">
                                                     <div class="cars-info">
-                                                        <h3>aston martin collection</h3>
+                                                        <h3>Classic AS46</h3>
                                                         <ul>
                                                             <li>Engine : V12</li>
                                                             <li>Horse power: 800</li>
@@ -229,7 +271,7 @@
                                                     </div>
                                                 </div>
                                             </li>
-                                            <li class="col-sm-6 col-md-4 new">
+                                            <li class="col-sm-6 col-md-4 bestVN new">
                                                 <div class="cars-item">
                                                     <img src="img/item-6.jpg" alt="">
                                                     <div class="cars-info">
