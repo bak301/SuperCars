@@ -1,0 +1,129 @@
+.content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top-content-left {
+    padding: 0 2px 0 0;
+}
+#top-content-left img{
+    width: 100%;
+    height: 400px;
+}
+#top-content-right img {
+    width: 100%;
+    height: 195px;
+}
+#top-content-left h1 {
+    background-color: rgba(1,1,1,0.8);
+    margin: 250px 0 0 50px;
+    position: absolute;
+    line-height: 45px;
+    width: 400px;
+}
+#top-content-left h1 a{
+    font-size: 30px;
+}
+#top-content-left h3 {
+    background-color: rgba(1,1,1,0.8);
+    margin: 350px 0 0 50px;
+    position: absolute;
+    line-height: 30px;
+}
+#top-content-right h2 {
+    background-color: rgba(1,1,1,0.5);
+    margin: 100px 0 0 50px;
+    position: absolute;
+    line-height: 20px;
+    width: 300px;
+    
+}
+#top-content-right h2 a{
+    font-size: 20px;
+    color: aqua;
+}
+#top-content-right h6 {
+    background-color: rgba(1,1,1,0.8);
+    margin: 150px 0 0 50px;
+    position: absolute;
+    line-height: 20px;
+    width: 300px;
+    color:  bisque;
+}
+.mid-content {
+    height: 400px;
+    margin-top: 50px;
+}
+.mid-content .col-sm-6 {
+    height: 200px;
+}
+.mid-content h2{
+    font-size: 25px;
+}
+
+.mid-content .col-sm-6 .col-sm-5 {
+    padding: 0;
+}
+.mid-content .col-sm-6 .col-sm-5 img {
+    width: 100%;
+    height: 150px;
+}
+.mid-content .col-sm-6 .col-sm-7 {
+    height: 200px;
+}
+.mid-content .col-sm-6 .col-sm-5 h6{
+    background-color: rgba(51,102,255,0.9);
+    margin: 140px 0 0 30px;
+    position: absolute;
+    line-height: 30px;
+    padding: 0 5px 0 5px;
+}
+.mid-content h2 a, .mid-content h3 a {
+    color: orangered;
+}
+.mid-content h6 a{
+    color: yellow;
+}
+
+.bot-content {
+    margin-top: 100px;
+}
+#bot-content-top-left h1, #bot-content-top-right h1 {
+    border-bottom: 5px solid red;
+}
+.bot-content-left div{
+    height: 200px;
+}
+.bot-content-left .col-sm-5 img {
+    width: 100%;
+    height: 170px;
+}
+.bot-content-right-top {
+    padding: 0 0 0 0;
+}
+.bot-content-right-top img {
+    width: 100%;
+    height: 200px;
+}
+.bot-content-right-top h5 {
+    position: absolute;
+    margin: 130px 0 0 20px;
+    line-height: 20px;
+    width: 220px;
+    background: rgba(225,0,0,0.8);
+    
+}
+.bot-content-right-top h5 a{
+    color: yellow;
+}
+.bot-content-right-bot img {
+    width: 100%;
+    height: 70px;
+}
+.bot-content-right-bot {
+    margin-top: 10px;
+}
+.bot-content-right-bot div .col-sm-4, .bot-content-right-bot div .col-sm-8 {
+    height: 90px;
+}

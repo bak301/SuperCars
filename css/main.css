@@ -16,11 +16,19 @@
   src: url('../fonts/Classico Regular.otf') format('opentype');
 }
 
+@font-face {
+  font-family: "UVNBaLe";
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/UVNBaLe.ttf') format('truetype');
+  src: url('../fonts/UVNBaLe.otf') format('opentype');
+}
+
 body {
     font-family: "Classico Italic", sans-serif;
 }
 
-p{
+p {
     font-family: "Classico Regular", sans-serif;
 }
 
@@ -208,6 +216,21 @@ a:hover {
 
 .item .name {
     font-size: 1.5em;
+}
+
+#news h1 {
+    background: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+#news hr{
+    margin-left: 31.5%;
+}
+
+#news-content {
+    padding: 20px 0;
 }
 /* ************************
 
