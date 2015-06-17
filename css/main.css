@@ -40,6 +40,64 @@ img {
 a:hover {
     text-decoration: none;
 }
+
+#video-player {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    padding-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+/****F A Q *********/
+#faq {
+    padding-bottom: 50px;
+}
+
+#faq h1{
+    background: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5em;
+}
+
+#faq h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.question {
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.question:active {
+    color: red;
+}
+
+.ans {
+    padding:0 40px;
+}
+
+.tech-supp {
+    font-family: "Classico Regular";
+    font-weight: bold;
+    font-size: 1.4em;
+    color: red;
+}
+
+.tech-supp span {
+    color: black;
+}
 /* ************************
 
     ***   HEADER ****
@@ -218,14 +276,44 @@ a:hover {
     font-size: 1.5em;
 }
 
-#news h1 {
+/******* GALLERY *********/
+#gallery h1 {
+    font-size: 3em;
+}
+
+#gallery h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 1% 0 0 0;
+    font-family: "Classico Regular",sans-serif;
+}
+
+.top-bd {
+    margin: 2% 0 0 0;
+    border-top: 1px solid black;
+}
+
+.top-bd h3 {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+/****** NEWS ******/
+
+#news h1 ,
+#gallery h1 {
     background: white;
     text-align: center;
     text-transform: uppercase;
+}
+
+#news h1 {
     font-size: 3.5em;
 }
 
-#news hr{
+#news hr,
+#gallery hr {
     margin-left: 31.5%;
 }
 

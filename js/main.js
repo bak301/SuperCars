@@ -33,6 +33,20 @@ $(document).ready(function() {
             $('#navigation').css('left', '-133px');
         }       
     })
+    $('.c2vid').click(function(){
+        $('#video-player').removeClass('hidden').append('<div class="col-sm-8 col-sm-offset-2"><iframe width="840" height="472" src="https://www.youtube.com/embed/ujn7jEQ4ib4" frameborder="0" allowfullscreen></iframe></div>')
+    })
+    $('body > *:not(iframe)').click(function(){
+        if (!$('#video-player').hasClass('hidden')){
+            $('#video-player>div').remove();
+            $('#video-player').addClass('hidden')
+        }       
+    })
+    $('.faq-item').click(function(){
+        $(this).children('.ans').toggle();
+        $(this).siblings().children('.ans').hide();
+    })
+    $('.ans').hide();
     if (screen.width < 768) {
         $('#about-contact').addClass('section')
         $('a[href=#about-contact]').click(function() {

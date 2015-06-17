@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Super Car</title>
+    <title>-- Cars Fanpage --</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
@@ -19,6 +19,8 @@
 </head>
 
 <body>
+    <div id="video-player" class="hidden">
+    </div>
     <div class="wrapper">
         <header class="header">
             <nav class="nav">
@@ -31,8 +33,9 @@
                         <li><a href="#navigation" onclick="go('newCars')">home</a></li>
                         <li><a href="#navigation" onclick="go('news')">news</a></li>
                         <li><a href="#navigation" onclick="go('CarFilter'),carFilter('features')">Cars</a></li>
-                        <li><a href="#navigation" onclick="go('collection')">gallery</a></li>
+                        <li><a href="#navigation" onclick="go('gallery')">gallery</a></li>
                         <li><a href="#navigation" onclick="go('accessories')">accessories</a></li>
+                        <li><a href="#navigation" onclick="go('faq')">faq</a></li>
                         <li><a href="#about-contact">about</a></li>
                         <li><a href="#about-contact">contact</a></li>
                     </ul>
@@ -294,50 +297,98 @@
                         </div>
                     </section>
                 </li>
+                <li id="gallery" class="section">
+                    <div class="container">
+                        <div class="row">
+                            <h1 class="col-sm-2 col-sm-offset-5" style="padding-right:10px">gallery</h1>
+                            <hr class="col-sm-4 col-sm-offset-4">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/ujn7jEQ4ib4" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="row top-bd">
+                            <h2 class="col-sm-12"> - V12 engine - </h2>
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/0.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/2.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/3.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/1.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row top-bd">
+                            <h2 class="col-sm-12"> - Racing -</h2>
+                            <div class="col-sm-12">
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/2.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/0.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/3.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="video-wrapper"><a class="c2vid"href="#gallery"><img src="http://img.youtube.com/vi/ujn7jEQ4ib4/1.jpg" alt=""><h3 class="c2vid">Lamboghini Aventador</h3></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="section" id="accessories">
                     <section class="accessories">
                         <div class="container">
                             <h1 class="title-acces col-sm-4 col-sm-offset-4">ACCESSORIES</h1>
                             <hr class="col-sm-8 col-sm-offset-2">
                             <div class="row">
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Lốp dạ quang có thể soi sáng đường trong đêm... sản phẩm bền lâu chịu mài mòn cao và chịu áp suất cực tốt... thích hợp với những bạn trẩu trẩu muốn thể hiện mình... " rel="popover" data-original-title="Lốp Con Đóm">
                                         <img class="images-acces" src="images/acces1.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="là vành xe chất lượng cao thích hợp với tất cả các loại xe thông dụng như xe kéo, xe thồ, xe công nông công suất từ nhỏ tới lớn, ngoài ra có thể lắp vào xe máy xe đạp và xe cút kít..." rel="popover" data-original-title="Xương Con Voi">
                                         <img class="images-acces" src="images/acces2.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Là 1 sản phẩm của Hãng Hải Hà KoToBucky sản phẩm đã được chứng nhận hàng việt nam chất lượng cao iso 9001-2000 được trẻ em khắp việt nam tin dùng - bích quy niềm vui của mọi nhà" rel="popover" data-original-title="Bánh bích quy">
                                         <img class="images-acces" src="images/acces3.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Sản Phẩm đầu tiên của Hãng Song Long Plastic 1 hãng chuyên về các sản phẩm đồ gia dụng từ tủ, bàn, ghế, hộp nhựa plastich chất lượng cao giờ chuyển qua làm loa thùng, là sản phẩm đầu tay nhưng không hề có thiếu sót... chắc chắn làm hài lòng mọi lỗ nhĩ của các bạn" rel="popover" data-original-title="Song Long Loa">
                                         <img class="images-acces" src="images/acces4.jpg" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="một sản phẩm không thế thiếu của bất kì chiếc xe nào... che nắng, che mưa, chống bụi, ẩm, rêu mốc, nấm, ngứa... chống hiv-aids, lậu, giang mai, hủ tiếu, bún thang, bún mắm tôm... tránh thai... tất cả mọi thứ" rel="popover" data-original-title="black condom">
                                         <img class="images-acces" src="images/acces5.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Được đánh giá là chiếc ghể cảm giác thật nhất cho người chơi game trên thế giới và được thiết kế một cách đơn giản không quá cầu kì với giá tiền không quá đắt chỉ với vài trăm củ bạn sở hữu ngay 1 bộ ghế gaming về để kê bếp ăn cơm với mọi người trong gia đình..." rel="popover" data-original-title="Gaming Ghế">
                                         <img class="images-acces" src="images/acces6.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="là loại xương kê đầu hình cái gối làm khiến cho chó nhà bạn tưởng cái gối mà không gặm cục sương... thiết thế trang nhã hiện đại đánh lừa mọi thị giác... chắc chắn cục sương sẽ là của riêng bạn mà thôi...." rel="popover" data-original-title="Xương Chó">
                                         <img class="images-acces" src="images/acces7.jpg" alt="">
                                     </a>
                                 </div>
-                                <div class="col-xs-3">
+                                <div class="col-xs-6 col-sm-3">
                                     <a class="btn popoverOption" href="#acc1" data-content="Chưa có một đánh giá chính thức nào về chiếc thảm tuyệt vời này... và điều bất ngờ là chiếc thảm này chẳng có gì bất ngờ... là một sản phẩm của hàng fake unique thiết kế và phân phối dự đoán sẽ đánh bay mọi đối thủ của mình trên thị trường trung đông..." rel="popover" data-original-title="Thảm lót sàn unique">
                                         <img class="images-acces" src="images/acces8.jpg" alt="">
                                     </a>
@@ -579,6 +630,54 @@
                                     </div>
                                 </div>
                             </arcticle>
+                        </div>
+                    </div>
+                </li>
+                <li class="section" id="faq">
+                    <div class="container">
+                        <h1 class="col-sm-8 col-sm-offset-2">frequently asked question</h1>
+                        <hr class="col-sm-12">
+                        <h2 class="col-sm-12">-- Click on question to show the answer --</h2>
+                        <ul class="col-sm-12" id="faq-content">
+                            <li class="faq-item row">
+                                <h4 class="question">1. Where can i buy Lamborghini Aventador Golden ? </h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">2. My engine doesn't start, what should i do ? </h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">3. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">4. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">5. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">6. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">7. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                            <li class="faq-item row">
+                                <h4 class="question">8. My engine suck, it's not start, help me please i give u a 100 usd?</h4>
+                                <p class="ans">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptate fugit aspernatur id, optio numquam. Blanditiis, magnam laboriosam consectetur rerum doloremque doloribus. Minima quis, libero quisquam harum. Sapiente labore, odit.</p>
+                            </li>
+                        </ul>
+                        <div class="row tech-supp col-sm-6 col-sm-offset-6">
+                            <img src="img/logo.jpg" class="col-sm-12">
+                            Call us when you need help about cars, our forums have many car's specialist who working at Honda, Volkswagen, ...
+                            <br> - <span>Hotline</span> : 0989 99 9889
+                            <br> - <span>Tech 1</span> : Nguyen The Toan : 0988 88 6406
+                            <br> - <span>Tech 2</span> : Bui Nguyen Cuong : 0162 499 1502
                         </div>
                     </div>
                 </li>
